@@ -46,29 +46,65 @@
 
 <body>
 
-    <div id="app" class="container mt-4">
+    <div id="app" class="mt-3">
 
 
-        <div class="row">
-            <div class="col-6 ">
-                <img src="{{ asset('images\banner.png') }}"  height="90" width="750" >
+        <nav class="nav">
 
+            <div class="container m-auto nav2">
+               
+
+                <div class="logo">
+                    <img src="{{ asset('images\logo.png') }}" height="80" width="80">
+                </div>
+                <div id="mainListDiv" class="main_list mt-2">
+                    <ul class="navlinks">
+                        <li><a href="#">الصفحه الرئيسيه</a></li>
+                        <li><a href="#">عن الهيأه</a></li>
+                        <li><a href="#">المؤتمرات والمعارض</a></li>
+                        <li><a href="#">المنتجات والخدمات</a></li>
+                        <li><a href="#">
+                           الخطه التدريبيه
+                    </a></li>
+
+                        <li><a href="#">أتصل بنا</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger mt-sm-4">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
             </div>
-            <div class="col-6">
+        </nav>
+        <main class="py-4">
 
-            </div>
-        </div>
+            @yield('content')
+        </main>
+        <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav2').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav2').removeClass('affix');
+                }
+            });
 
 
-    </div>
-    <main class="py-4">
+            $('.navTrigger').click(function() {
+                $(this).toggleClass('active');
+                console.log("Clicked menu");
+                $("#mainListDiv").toggleClass("show_list");
+                $("#mainListDiv").fadeIn();
 
-        @yield('content')
-    </main>
-    <footer class="container-fluid  pb-2 footer ">
-    </footer>
-    <!-- Footer -->
-
+            });
+        </script>
 
 </body>
 
