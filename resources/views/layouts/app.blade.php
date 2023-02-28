@@ -46,13 +46,15 @@
 
 <body>
 
-    <div id="app" class="mt-3">
+    <div id="app">
 
-
+    <button class="btn">
+    <i class="fa-solid fa-arrow-up  "  style="color:#eb9937;font-size:20px"></i>
+</button>
         <nav class="nav">
 
             <div class="container m-auto nav2">
-               
+
 
                 <div class="logo">
                     <img src="{{ asset('images\logo.png') }}" height="80" width="80">
@@ -64,8 +66,8 @@
                         <li><a href="#">المؤتمرات والمعارض</a></li>
                         <li><a href="#">المنتجات والخدمات</a></li>
                         <li><a href="#">
-                           الخطه التدريبيه
-                    </a></li>
+                                الخطه التدريبيه
+                            </a></li>
 
                         <li><a href="#">أتصل بنا</a></li>
                     </ul>
@@ -77,34 +79,156 @@
                 </span>
             </div>
         </nav>
-        <main class="py-4">
+        <main class="mt-4">
 
             @yield('content')
         </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="widget1">
+                            <i class="fa-thin fa-address-card"></i>
+                            <h5>
+                                من نحن
+                            </h5>
+                            <p>
+                                <i class="fa fa-map-marker"></i>
+                                <span> الجادرية, Baghdad, Iraq
+                                </span> City, Country
+                            </p>
+                            <p>
+                                <i class="fa fa-phone"></i>
+                                +964 790 286 7211
+                            </p>
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                <a href="#">
+                                    media@crid.gov.iq</a>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="widget2">
+                            <h5>
+                                أهم الاخبار </h5>
+                            <div class="media">
+                                <img class="img-fluid" src="{{asset('images/1029.jpg')}}" alt="">
+                                <div class="media-body d-flex align-self-center">
+                                    <div class="content">
+                                        <a href="#">
+                                            <p>
+                                                هيأة البحث والتطوير الصناعي تشارك في فعاليات ورشة العمل الموسومة
+                                            </p>
+                                        </a>
+                                        <span>
+                                            التاريخ: 28-02-2023
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <img class="img-fluid" src="{{asset('images/1032.jpg')}}" alt="">
+                                <div class="media-body d-flex align-self-center">
+                                    <div class="content">
+                                        <a href="#">
+                                            <p>
+                                                هيأة البحث والتطوير الصناعي تحتضن اجتماع اللجنة الوزارية للحاضنة التكنولوجية </p>
+                                        </a>
+                                        <span>
+                                            التاريخ: 28-02-2023
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <div class="widget3">
+                            <h5>
+                                <i class="bi bi-bookmarks"></i>
+                                صفحات مهمه
+                            </h5>
+                            <ul>
+                                <li><a href="#">الصفحه الرئيسيه</a></li>
+                                <li><a href="#">عن الهيأه</a></li>
+                                <li><a href="#">المؤتمرات والمعارض</a></li>
+                                <li><a href="#">المنتجات والخدمات</a></li>
+                                <li><a href="#">
+                                        الخطه التدريبيه
+                                    </a></li>
+
+                                <li><a href="#">أتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <div class="widget4">
+                            <div class="logo">
+                                <img src="{{ asset('images\logo.png') }}" class="img-fluid" alt="" height="110" width="110">
+                            </div>
+                            <div class="socialLinks">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyRightArea">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p>&copy; Copyright All rights reserved 2023.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="news-container">
+            <div class="title">
+                خبر عاجل
+            </div>
+
+            <ul>
+                <li>
+
+                    تم اصدار خلاصات البحوث لوزارة الصناعة والمعادن لسنة 2022
+                </li>
+
+                <li>
+                    تم اصدار خلاصات البحوث لوزارة الصناعة والمعادن لسنة 2022
+                </li>
+
+                <li>
+                    تم اصدار خلاصات البحوث لوزارة الصناعة والمعادن لسنة 2022 </li>
+            </ul>
+        </div>
+
+
         <!-- Jquery needed -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
 
-        <!-- Function used to shrink nav bar removing paddings and adding black background -->
-        <script>
-            $(window).scroll(function() {
-                if ($(document).scrollTop() > 50) {
-                    $('.nav2').addClass('affix');
-                    console.log("OK");
-                } else {
-                    $('.nav2').removeClass('affix');
-                }
-            });
-
-
-            $('.navTrigger').click(function() {
-                $(this).toggleClass('active');
-                console.log("Clicked menu");
-                $("#mainListDiv").toggleClass("show_list");
-                $("#mainListDiv").fadeIn();
-
-            });
-        </script>
 
 </body>
 
