@@ -40,6 +40,7 @@ button {
     line-height: 65px;
     text-align: center;
     font-family: Tajawal ;
+    
 }
 
 .nav2{
@@ -49,16 +50,17 @@ button {
 padding: 10px 0;
 }
 .nav div.logo {
-    float: left;
+    float: right;
     width: auto;
     height: auto;
-    padding-left: 3rem;
+    padding-right: 4rem !important;
+    
 }
 
 .nav div.logo a {
     text-decoration: none;
     color: #000000;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 .nav div.logo a:hover {
@@ -66,8 +68,9 @@ padding: 10px 0;
 }
 
 .nav div.main_list {
-    height: 65px;
-    float: right;
+    height: 50px;
+    float: left;
+    padding-left: 4rem;
 }
 
 .nav div.main_list ul {
@@ -99,22 +102,12 @@ padding: 10px 0;
 }
 
 
-/* Home section */
-
-.home {
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
-    background-position: center top;
-	background-size:cover;
-}
-
 .navTrigger {
     display: none;
+
 }
 
 .nav {
-    padding-top: 20px;
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -498,7 +491,11 @@ div1{
 	}
 }
 @media only screen and (max-width: 800px) {
-
+    .nav div.logo {
+        float:left;
+        padding-left: 4rem !important;
+        
+    }
     .navTrigger{
         margin-top:60px !important;
         margin-right: 20px !important;
@@ -507,7 +504,7 @@ div1{
     .nav div.main_list ul {
         flex-direction: column;
         width: 40%;
-        height: 60vh;
+        height: 70vh;
 
     }
 
@@ -519,12 +516,18 @@ div1{
 @media only screen and (max-width: 600px) {
     .nav div.main_list ul {
         flex-direction: column;
-        width: 60%;
-        height: 60vh;
+        width: 70%;
+        height: 70vh;
 
     }
+    .nav div.logo {
+        float:left;
+        padding-left:1.5rem !important;
+        
+    }
+
 .navTrigger{
-    margin-top: 70px !important;
+    margin-top: 40px !important;
     margin-right: 0px !important;
 
 }

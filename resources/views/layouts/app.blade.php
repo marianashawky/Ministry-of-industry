@@ -51,12 +51,12 @@
     <button class="btn">
     <i class="fa-solid fa-arrow-up  "  style="color:#eb9937;font-size:20px"></i>
 </button>
-        <nav class="nav">
+        <nav class="nav pt-0 pt-md-4 ">
 
-            <div class="container m-auto nav2">
+            <div class="container  m-auto nav2">
 
 
-                <div class="logo">
+            <div class="logo">
                     <img src="{{ asset('images\logo.png') }}" height="80" width="80">
                 </div>
                 <div id="mainListDiv" class="main_list mt-2">
@@ -72,6 +72,7 @@
                         <li><a href="#">أتصل بنا</a></li>
                     </ul>
                 </div>
+              
                 <span class="navTrigger mt-sm-4">
                     <i></i>
                     <i></i>
@@ -206,8 +207,8 @@
         </footer>
         <div class="news-container">
             <div class="title">
-                خبر عاجل
-            </div>
+خبر هام
+        </div>
 
             <ul>
                 <li>
