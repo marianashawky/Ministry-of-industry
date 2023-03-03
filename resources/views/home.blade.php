@@ -2,8 +2,36 @@
 
 @section('content')
 
+<section class="container">
+<div id="demo" class="carousel slide" data-ride="carousel">
 
-<section class="about-section">
+
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{asset('images/slider.jpg')}}" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="{{asset('images/slider2.jpg')}}" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="{{asset('images/slider.jpg')}}" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</section>
+<!-- /Contact-us-->
+<!--Banner-->
+<section class="about-section " style="margin-top:-120px">
     <div class="container">
 
     <div class="experince-header"><span class="experince-header-set">عن الهيأه</span></div>
@@ -80,7 +108,7 @@
         <div class="row" id="cardetails">
             <div class="col-list-3">
                 <div class="featured-car-list">
-                    <div class="featured-car-img"><a href="تفاصيل السيارة .html"><img src="{{asset('images/img2.jpg')}}" class="img-responsive" alt="Image"></a>
+                    <div class="featured-car-img"><a ><img src="{{asset('images/img2.jpg')}}" class="img-responsive" alt="Image"></a>
                     </div>
                     <div class="featured-car-content">
                         <h6><a href="تفاصيل السيارة .html">
@@ -223,7 +251,8 @@
         </div>
     </div>
 </section>
-<!-- /Contact-us-->
 
+<script>
 
+</script>
 @endsection
