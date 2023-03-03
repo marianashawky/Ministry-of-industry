@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.cdnfonts.com/css/tajawal" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="{{  asset('front_asset/css/bootstrap-ar.min.css')}}" type="text/css">
+
+<!--Custome Style -->
+<!--OWL Carousel slider-->
+<link rel="stylesheet" href="{{  asset('css/owl.carousel.css')}}" type="text/css">
+<link rel="stylesheet" href="{{  asset('css/owl.transitions.css')}}" type="text/css">
+<!--slick-slider -->
+<link href="{{  asset('css/slick.css')}}" rel="stylesheet">
+<!--bootstrap-slider -->
+<link href="{{  asset('css/bootstrap-slider.min.css')}}" rel="stylesheet">
+<!--FontAwesome Font Style -->
+
+<link href="{{  asset('css/font-awesome.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{  asset('css/style-ar.css') }}">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -16,8 +30,10 @@
         هيأه البحث والتطوير الصناعي
     </title>
     <meta name="robots">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- jquery -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- Price nouislider-filter cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.css" integrity="sha512-MKxcSu/LDtbIYHBNAWUQwfB3iVoG9xeMCm32QV5hZ/9lFaQZJVaXfz9aFa0IZExWzCpm7OWvp9zq9gVip/nLMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -48,7 +64,7 @@
 
     <div id="app">
 
-    <button class="btn">
+    <button class="btn buttonfix">
     <i class="fa-solid fa-arrow-up  "  style="color:#eb9937;font-size:20px"></i>
 </button>
         <nav class="nav pt-0 pt-md-4 ">
@@ -169,7 +185,7 @@
                     <div class="col-sm-6 col-lg-2">
                         <div class="widget4">
                             <div class="logo">
-                                <img src="{{ asset('images\logo.png') }}" class="img-fluid" alt="" height="110" width="110">
+                                <img src="{{ asset('images\logo.png') }}" class="img-fluid" alt="" height="100" width="140">
                             </div>
                             <div class="socialLinks">
                                 <ul>
@@ -229,6 +245,15 @@
         <!-- Jquery needed -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
+<!-- Scripts --> 
+<script src="{{asset('js/jquery.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script> 
+<script src="{{asset('js/interface.js')}}"></script> 
+<!--bootstrap-slider-JS--> 
+<script src="{{asset('js/bootstrap-slider.min.js')}}"></script> 
+<!--Slider-JS--> 
+<script src="{{asset('js/slick.min.js')}}"></script> 
+<script src="{{asset('js/owl.carousel.min.js')}}"></script>
 
 
 </body>
